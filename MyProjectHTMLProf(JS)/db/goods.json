@@ -1,0 +1,121 @@
+[
+    {
+      "id": "1",
+      "category": "featured",
+      "name": "Mango  People  T-shirt",
+      "image": "images/product_1.jpg",
+      "price": 52
+    },
+    {
+      "id": "2",
+      "category": "featured",
+      "name": "Mango  People  T-shirt",
+      "image": "images/product_2.jpg",
+      "price": 52
+    },
+    {
+      "id": "3",
+      "category": "featured",
+      "name": "Mango  People  T-shirt",
+      "image": "images/product_3.jpg",
+      "price": 52
+    },
+    {
+      "id": "4",
+      "category": "featured",
+      "name": "Mango  People  T-shirt",
+      "image": "images/product_4.jpg",
+      "price": 52
+    },
+    {
+      "id": "5",
+      "category": "featured",
+      "name": "Mango  People  T-shirt",
+      "image": "images/product_5.jpg",
+      "price": 52
+    },
+    {
+      "id": "6",
+      "category": "featured",
+      "name": "Mango  People  T-shirt",
+      "image": "images/product_6.jpg",
+      "price": 52
+    },
+    {
+      "id": "7",
+      "category": "featured",
+      "name": "Mango  People  T-shirt",
+      "image": "images/product_7.jpg",
+      "price": 52
+    },
+    {
+      "id": "8",
+      "category": "featured",
+      "name": "Mango  People  T-shirt",
+      "image": "images/product_8.jpg",
+      "price": 52
+    },
+    {
+      "id": "9",
+      "category": "men",
+      "name": "Mango  People  T-shirt",
+      "image": "images/product1.jpg",
+      "price": 52
+    },
+    {
+      "id": "10",
+      "category": "men",
+      "name": "Mango  People  T-shirt",
+      "image": "images/product2.jpg",
+      "price": 52
+    },
+    {
+      "id": "11",
+      "category": "men",
+      "name": "Mango  People  T-shirt",
+      "image": "images/product3.jpg",
+      "price": 52
+    },
+    {
+      "id": "12",
+      "category": "men",
+      "name": "Mango  People  T-shirt",
+      "image": "images/product4.jpg",
+      "price": 52
+    },
+    {
+      "id": "13",
+      "category": "men",
+      "name": "Mango  People  T-shirt",
+      "image": "images/product5.jpg",
+      "price": 52
+    },
+    {
+      "id": "14",
+      "category": "men",
+      "name": "Mango  People  T-shirt",
+      "image": "images/product6.jpg",
+      "price": 52
+    },
+    {
+      "id": "15",
+      "category": "men",
+      "name": "Mango  People  T-shirt",
+      "image": "images/product7.jpg",
+      "price": 52
+    },
+    {
+      "id": "16",
+      "category": "men",
+      "name": "Mango  People  T-shirt",
+      "image": "images/product8.jpg",
+      "price": 52
+    },
+    {
+      "id": "17",
+      "category": "men",
+      "name": "Mango  People  T-shirt",
+      "image": "images/product9.jpg",
+      "price": 52
+    }
+  ]
