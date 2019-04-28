@@ -1,4 +1,4 @@
-@import "../../packages/bootstrap-4.2.1/scss/bootstrap.scss";
+@import "../../../packages/bootstrap-4.2.1/scss/bootstrap.scss";
 @import "variables";
 
 body {
@@ -42,7 +42,6 @@ body {
 
   img {
     margin-left: auto;
-    margin-right: 25px;
     padding-left: 7px;
 
     @media (max-width: 765px) {
@@ -53,6 +52,19 @@ body {
       margin-right: 10px;
     }
   }
+
+  sup {
+    background-color:  $mainColor;
+    border-radius: 100%;
+    padding: 3px;
+    margin-left: -7px;
+    margin-right: 25px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+    color:#fff;
+  }
+  
 
   .accountBtn {
     padding: 15px;
@@ -705,10 +717,15 @@ body {
           font-size: 12px;
           font-weight: 700;
 
+          em {
+            color: #ff0d0d;
+          }
+
           input {
-            border-style: solid;
-            border-width: 1px;
-            border-color: #eaeaea;
+            padding: 10px;
+            color: #4a4a4a;
+            font-size: 16px;
+            border: 1px solid #eaeaea;
             background-color: #fff;
             width: 390px;
             height: 45px;
@@ -746,54 +763,31 @@ body {
     padding: 0 15px;
   }
 
+  .total {
+    margin: 0 20px 20px;
+    color: $mainColor;
+  }
+
   .shoppingHeadProductWrap {
     grid-area: HeadProduct;
   }
 
-  .shoppingHeadPriceWrap {
-    grid-area: HeadPrice;
-  }
-
-  .shoppingDescProductWrap1 {
-    grid-area: DescProduct1;
-  }
-
-  .shoppingDescPriceWrap1 {
-    grid-area: DescPrice1;
-  }
-
-  .shoppingDescProductWrap2 {
-    grid-area: DescProduct2;
-  }
-
-  .shoppingDescPriceWrap2 {
-    grid-area: DescPrice2;
-  }
-
-  .shoppingDescProductWrap3 {
-    grid-area: DescProduct3;
-  }
-
-  .shoppingDescPriceWrap3 {
-    grid-area: DescPrice3;
+  .shoppingDescProductWrap {
+    grid-area: DescProduct;
   }
 
   .shoppingCartWrap {
     grid-row-gap: 1px;
     background-color: #eaeaea;
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: auto;
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr;
     grid-template-areas:
-      "HeadProduct HeadPrice"
-      "DescProduct1 DescPrice1"
-      "DescProduct2 DescPrice2"
-      "DescProduct3 DescPrice3";
+      "HeadProduct"
+      "DescProduct";
 
     @media (max-width: 767.98px) {
-      grid-template-areas: "HeadProduct HeadProduct" "DescProduct1 DescProduct1" "HeadPrice HeadPrice"
-      "DescPrice1 DescPrice1" "DescProduct2 DescProduct2" "DescPrice2 DescPrice2"
-      "DescProduct3 DescProduct3" "DescPrice3 DescPrice3";
+      grid-template-areas: "HeadProduct HeadProduct" "DescProduct DescProduct";
     }
 
     & > div {
@@ -803,55 +797,72 @@ body {
   }
 
   .shoppingHeadProductWrap,
-  .shoppingDescProductWrap1,
-  .shoppingDescProductWrap2,
-  .shoppingDescProductWrap3 {
+  .shoppingDescProductWrap {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-  }
 
-  .shoppingHeadPriceWrap,
-  .shoppingDescPriceWrap1,
-  .shoppingDescPriceWrap2,
-  .shoppingDescPriceWrap3 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #656565;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 115px;
-
-    @include media-breakpoint-down(xs) {
-      line-height: inherit;
+    img {
+      width: 110px;
     }
 
-
-    input {
-      width: 54px;
-      height: 30px;
-      border: 1px solid #eaeaea;
-      background-color: #fff;
-      text-align: center;
-    }
-
-    .productCartAction {
-      color: #c0c0c0;
-      font-size: 16px;
-    }
-  }
-
-  .shoppingCartHead {
-    color: #222222;
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 20px;
-    letter-spacing: -0.2px;
-
-    @include media-breakpoint-down(xs) {
-      font-size: 10px;
+    .shoppingCartHead {
+      color: #222222;
+      font-size: 13px;
       font-weight: 700;
+      line-height: 20px;
+      letter-spacing: -0.2px;
+      flex-basis: 120px;
+      text-align: center;
+  
+      &:nth-child(2) {
+          flex: 200px;
+      }
+  
+      &:last-child {
+        flex: 80px;
+      }
+  
+      @include media-breakpoint-down(xs) {
+        font-size: 10px;
+        font-weight: 700;
+      }
+    }
+    
+    .productCartPrice {
+      color: #656565;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 115px;
+      flex-basis: 120px;
+      text-align: center;
+
+      &:nth-child(2) {
+        flex: 200px;
+      }
+
+      &:last-child {
+        flex: 80px;
+        background-color: #fff;
+        color: #c0c0c0;
+        font-size: 16px;
+
+        &:hover {
+          color: #8a8a8a;
+          cursor: pointer;
+        }
+      }
+    }
+    // @include media-breakpoint-down(xs) {
+    //   line-height: inherit;
+    // }
+
+    button {
+      border-style: none;
+      
+      &:focus {
+        outline: none;
+      }
     }
   }
 
@@ -874,6 +885,7 @@ body {
       margin-top: 20px;
       color: #575757;
       line-height: 20px;
+      text-align: start;
 
       span {
         color: $textColor;
