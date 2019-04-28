@@ -14,340 +14,154 @@
 </head>
 
 <body>
-
-<header class="header container-fluid">
-    <div class="container headerInside">
-        <div class="logo">
-            BRAN<span>D</span>
-        </div>
-        <form class="searchWrap">
-            <div class="searchBrowse">
-                Browse <i class="fas fa-caret-down"></i>
-            </div>
-            <input type="text" placeholder="Search for Item...">
-            <button>
-                <i class="fas fa-search"></i>
-            </button>
-        </form>
-        <img src="images/cart.png" alt="Cart">
-        <button class="accountBtn">
-            My Account
-            <i class="fas fa-caret-down"></i>
-        </button>
-    </div>
-</header>
-
-<nav class="topNav">
-    <ul class="nav justify-content-center">
-        <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Men</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Women</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Kids</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Accoseriese</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Featured</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Hot Deals</a>
-        </li>
-    </ul>
-</nav>
-
-<div class="newArrivalsWrap">
-    <div class="container newArrivals">
-        <h1>New arrivals</h1>
-        <nav>
-            <a href="">Home</a>
-            <span>/</span>
-            <a href="">Men</a>
-            <span>/</span>
-            <a href="">New arrivals</a>
-        </nav>
-    </div>
-</div>
-
-<div class="container shoppingCartContainer">
-    <div class="shoppingCartWrap">
-        <div class="shoppingHeadProductWrap">
-            <div class="shoppingCartHead">PRODUCT DETAILS</div>
-            <div class="shoppingCartHead"></div>
-        </div>
-        <div class="shoppingHeadPriceWrap">
-            <div class="shoppingCartHead">UNITE PRICE</div>
-            <div class="shoppingCartHead">QUANTITY</div>
-            <div class="shoppingCartHead">SHIPPING</div>
-            <div class="shoppingCartHead">SUBTOTAL</div>
-            <div class="shoppingCartHead">ACTION</div>
-        </div>
-
-        <div class="shoppingDescProductWrap1">
-            <img src="images/productImage1.jpg" alt="">
-            <div class="productCart">
-                <div class="productCartName">
-                    Mango  People  T-shirt
+<div id="app">
+        <header class="header container-fluid">
+            <div class="container headerInside">
+                <div class="logo">
+                    BRAN<span>D</span>
                 </div>
-                <div class="productCartDetails">
-                    <div class="productCartDetailsTop">
-                        Color: <span>Red</span>
-                    </div>
-                    <div class="productCartDetailsBottom">
-                        Size: <span>XLL</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="shoppingDescPriceWrap1">
-            <div class="productCartPrice">$150</div>
-            <div class="productCartQuantity">
-                <input type="number" placeholder="2">
-            </div>
-            <div class="productCartShipping">FREE</div>
-            <div class="productCartSubtotal">$300</div>
-            <div class="productCartAction">
-                <i class="fas fa-times-circle"></i>
-            </div>
-        </div>
-
-        <div class="shoppingDescProductWrap2">
-            <img src="images/productImage2.jpg" alt="">
-            <div class="productCart">
-                <div class="productCartName">
-                    Mango  People  T-shirt
-                </div>
-                <div class="productCartDetails">
-                    <div class="productCartDetailsTop">
-                        Color: <span>Red</span>
-                    </div>
-                    <div class="productCartDetailsBottom">
-                        Size: <span>XLL</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="shoppingDescPriceWrap2">
-            <div class="productCartPrice">$150</div>
-            <div class="productCartQuantity">
-                <input type="number" placeholder="2">
-            </div>
-            <div class="productCartShipping">FREE</div>
-            <div class="productCartSubtotal">$300</div>
-            <div class="productCartAction">
-                <i class="fas fa-times-circle"></i>
-            </div>
-        </div>
-
-        <div class="shoppingDescProductWrap3">
-            <img src="images/productImage3.jpg" alt="">
-            <div class="productCart">
-                <div class="productCartName">
-                    Mango  People  T-shirt
-                </div>
-                <div class="productCartDetails">
-                    <div class="productCartDetailsTop">
-                        Color: <span>Red</span>
-                    </div>
-                    <div class="productCartDetailsBottom">
-                        Size: <span>XLL</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="shoppingDescPriceWrap3">
-            <div class="productCartPrice">$150</div>
-            <div class="productCartQuantity">
-                <input type="number" placeholder="2">
-            </div>
-            <div class="productCartShipping">FREE</div>
-            <div class="productCartSubtotal">$300</div>
-            <div class="productCartAction">
-                <i class="fas fa-times-circle"></i>
-            </div>
-        </div>
-    </div>
-
-    <div class="row shoppingCartBtnWrap">
-        <div class="col-sm-6 col-xs-12 productCartBtnLeft">
-            <button class="cartBtnLeft">
-                CLEAR SHOPPING CART
-            </button>
-        </div>
-        <div class="col-sm-6 col-xs-12 productCartBtnRight">
-            <button class="cartBtnRight">
-                CONTINUE SHOPPING
-            </button>
-        </div>
-    </div>
-</div>
-
-<div class="container boxCheckoutWrap">
-    <div class="row boxCheckoutContainer">
-        <section class="col-md-4 boxShippingAdress">
-            <form action="#" method="post">
-                <h2 class="boxCheckoutName">
-                    Shipping Adress
-                </h2>
-                <select required>
-                    <option selected value="Bangladesh">Bangladesh</option>
-                    <option value="Russia">Russia</option>
-                    <option value="France">France</option>
-                </select>
-                <input required type="text" placeholder="State">
-                <input required type="text" placeholder="Postcode/Zip">
-                <button>GET A QUOTE</button>
-            </form>
-        </section>
-        <section class="col-md-4 boxCouponDiscount">
-            <form>
-                <h2 class="boxCheckoutName">
-                    Coupon Discount
-                </h2>
-                <label for="state">Enter your coupon code if you have one</label>
-                <input id="state" type="text" placeholder="State">
-                <button>APPLY COUPON</button>
-            </form>
-        </section>
-        <div class="col-md-4 boxProceedToCheckout">
-            <div class="boxProceedToCheckoutTop">
-                <div class="boxCheckoutSubTotal">
-                    <div class="boxCheckoutSubTotalLeft">
-                        SUB TOTAL
-                    </div>
-                    <div class="boxCheckoutSubTotalRight">
-                        $900
-                    </div>
-                </div>
-                <div class="boxCheckoutGrandTotal">
-                    <div class="boxCheckoutGrandTotalLeft">
-                        GRAND TOTAL
-                    </div>
-                    <div class="boxCheckoutGrandTotalRight">
-                        &900
-                    </div>
-                </div>
-            </div>
-            <div class="checkoutDivider"></div>
-            <div class="boxProceedToCheckoutBottom">
-                <button>PROCEED TO CHECKOUT</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container-fluid subscribeWrap">
-    <div class="container subscribe">
-        <div class="row reviews">
-            <div class="col-md-6 coll-sm-12 reviewUnit">
-                <img src="images/reviewPerson.png" alt="">
-                <div class="reviewUnitRight">
-                    <blockquote>
-                        “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
-                        a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
-                    </blockquote>
-                    <div class="reviewName">
-                        Bin Burhan
-                    </div>
-                    <div class="reviewFrom">
-                        Dhaka, Bd
-                    </div>
-                    <div class="reviewsSwitch">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 coll-sm-12 subscribeRight">
-                <div class="subscribeRightHead">
-                    Subscribe
-                </div>
-                <div class="subscribeRightText">
-                    FOR OUR NEWLETTER AND PROMOTION
-                </div>
-                <form class="subscribeForm" action="">
-                    <input placeholder="Enter Your Email" type="text">
-                    <button>Subscribe</button>
+                <form class="searchWrap">
+                    <search @onsearch="handleSearch"></search>
                 </form>
+                <img src="images/cart.png" alt="Cart">
+                <span><sup> {{ cartItemCount }} </sup></span>
+                <button class="accountBtn">
+                    My Account
+                    <i class="fas fa-caret-down"></i>
+                </button>
             </div>
-        </div>
-    </div>
-</div>
+        </header>
 
-<footer class="container">
-    <div class="row footerWrap">
-        <div class="col-lg-5 col-md-12 footerBrand">
-            <div class="logo">
-                BRAN<span>D</span>
-            </div>
-            <div class="footerBrandText1">
-                Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate
-                multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of
-                processes and cross-unit partnerships.
-            </div>
-            <div class="footerBrandText2">
-                Efficiently plagiarize 24/365 action items and focused infomediaries.
-                Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
-            </div>
-        </div>
-        <section class="col-lg-2 col-md-12 footerColumn">
-            <h2>COMPANY</h2>
+    <nav is="topNav"></nav>
+
+    <div class="newArrivalsWrap">
+        <div class="container newArrivals">
+            <h1>New arrivals</h1>
             <nav>
                 <a href="">Home</a>
-                <a href="">Shop</a>
-                <a href="">About</a>
-                <a href="">How It Works</a>
-                <a href="">Contact</a>
-            </nav>
-        </section>
-        <section class="col-lg-2 col-md-12 footerColumn">
-            <h2>INFORMATION</h2>
-            <nav>
-                <a href="">Tearms & Condition</a>
-                <a href="">Privacy Policy</a>
-                <a href="">How to Buy</a>
-                <a href="">How to Sell</a>
-                <a href="">Promotion</a>
-            </nav>
-        </section>
-        <section class="col-lg-2 col-md-12 footerColumn">
-            <h2>SHOP CATEGORY</h2>
-            <nav>
+                <span>/</span>
                 <a href="">Men</a>
-                <a href="">Women</a>
-                <a href="">Child</a>
-                <a href="">Apparel</a>
-                <a href="">Browse All</a>
+                <span>/</span>
+                <a href="">New arrivals</a>
             </nav>
-        </section>
-    </div>
-</footer>
-<div class="container-fluid copyrightsWrap">
-    <div class="container copyrightsContent">
-        <div class="copyrightsLeft">
-            &copy; 2017 Brand All Rights Reserved.
         </div>
-        <div class="copyrightsRight">
-            <a href=""><i class="fab fa-facebook-f"></i></a>
-            <a href=""><i class="fab fa-twitter"></i></a>
-            <a href=""><i class="fab fa-linkedin-in"></i></a>
-            <a href=""><i class="fab fa-pinterest-p"></i></a>
-            <a href=""><i class="fab fa-google-plus-g"></i></a>
+    </div>
+    
+    <products v-if="showSearch" @onbuy="handleBuyClick" :query="searchQuery"></products>
+
+    <cart :cart="cart" :total="total" @ondelete="handleDeleteClick"></cart>
+       
+
+    <div class="container boxCheckoutWrap">
+        <div class="row boxCheckoutContainer">
+            <section class="col-md-4 boxShippingAdress">
+                <form action="#" method="post">
+                    <h2 class="boxCheckoutName">
+                        Shipping Adress
+                    </h2>
+                    <select required>
+                        <option selected value="Bangladesh">Bangladesh</option>
+                        <option value="Russia">Russia</option>
+                        <option value="France">France</option>
+                    </select>
+                    <input required type="text" placeholder="State">
+                    <input required type="text" placeholder="Postcode/Zip">
+                    <button>GET A QUOTE</button>
+                </form>
+            </section>
+            <section class="col-md-4 boxCouponDiscount">
+                <form>
+                    <h2 class="boxCheckoutName">
+                        Coupon Discount
+                    </h2>
+                    <label for="state">Enter your coupon code if you have one</label>
+                    <input id="state" type="text" placeholder="State">
+                    <button>APPLY COUPON</button>
+                </form>
+            </section>
+            <div class="col-md-4 boxProceedToCheckout">
+                <div class="boxProceedToCheckoutTop">
+                    <div class="boxCheckoutSubTotal">
+                        <div class="boxCheckoutSubTotalLeft">
+                            SUB TOTAL
+                        </div>
+                        <div class="boxCheckoutSubTotalRight">
+                            {{ total | currency }}
+                        </div>
+                    </div>
+                    <div class="boxCheckoutGrandTotal">
+                        <div class="boxCheckoutGrandTotalLeft">
+                            GRAND TOTAL
+                        </div>
+                        <div class="boxCheckoutGrandTotalRight">
+                            {{ total | currency }}
+                        </div>
+                    </div>
+                </div>
+                <div class="checkoutDivider"></div>
+                <div class="boxProceedToCheckoutBottom">
+                    <button>PROCEED TO CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid subscribeWrap">
+        <div class="container subscribe">
+            <div class="row reviews">
+                <div class="col-md-6 coll-sm-12 reviewUnit">
+                    <img src="images/reviewPerson.png" alt="">
+                    <div class="reviewUnitRight">
+                        <blockquote>
+                            “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                            a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                        </blockquote>
+                        <div class="reviewName">
+                            Bin Burhan
+                        </div>
+                        <div class="reviewFrom">
+                            Dhaka, Bd
+                        </div>
+                        <div class="reviewsSwitch">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 coll-sm-12 subscribeRight">
+                    <div class="subscribeRightHead">
+                        Subscribe
+                    </div>
+                    <div class="subscribeRightText">
+                        FOR OUR NEWLETTER AND PROMOTION
+                    </div>
+                    <form class="subscribeForm" action="">
+                        <input placeholder="Enter Your Email" type="text">
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer is="Footer"></footer>
+    
+    <div class="container-fluid copyrightsWrap">
+        <div class="container copyrightsContent">
+            <div class="copyrightsLeft">
+                &copy; 2017 Brand All Rights Reserved.
+            </div>
+            <div class="copyrightsRight">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-pinterest-p"></i></a>
+                <a href=""><i class="fab fa-google-plus-g"></i></a>
+            </div>
         </div>
     </div>
 </div>
-
-
 
 
 <!-- Optional JavaScript -->
@@ -358,5 +172,8 @@
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
