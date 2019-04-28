@@ -3148,11 +3148,13 @@ body button:focus { outline: 1px solid #e6e6e6; }
 
 @media (max-width: 765px) { .headerInside > div, .headerInside form { margin-bottom: 15px; } }
 
-.headerInside img { margin-left: auto; margin-right: 25px; padding-left: 7px; }
+.headerInside img { margin-left: auto; padding-left: 7px; }
 
 @media (max-width: 765px) { .headerInside img { display: none; } }
 
 @media (max-width: 990px) { .headerInside img { margin-right: 10px; } }
+
+.headerInside sup { background-color: #f16d7f; border-radius: 100%; padding: 3px; margin-left: -7px; margin-right: 25px; font-size: 18px; line-height: 18px; font-weight: 600; color: #fff; }
 
 .headerInside .accountBtn { padding: 15px; background-color: #f16d7f; color: #fff; border: none; }
 
@@ -3366,7 +3368,9 @@ body button:focus { outline: 1px solid #e6e6e6; }
 
 .checkoutWrap .checkoutContainer details .checkoutShippingAddressWrap .checkoutRegisterLabel { color: #222222; font-size: 12px; font-weight: 700; }
 
-.checkoutWrap .checkoutContainer details .checkoutShippingAddressWrap .checkoutRegisterLabel input { border-style: solid; border-width: 1px; border-color: #eaeaea; background-color: #fff; width: 390px; height: 45px; }
+.checkoutWrap .checkoutContainer details .checkoutShippingAddressWrap .checkoutRegisterLabel em { color: #ff0d0d; }
+
+.checkoutWrap .checkoutContainer details .checkoutShippingAddressWrap .checkoutRegisterLabel input { padding: 10px; color: #4a4a4a; font-size: 16px; border: 1px solid #eaeaea; background-color: #fff; width: 390px; height: 45px; }
 
 @media (max-width: 850px) { .checkoutWrap .checkoutContainer details .checkoutShippingAddressWrap .checkoutRegisterLabel input { width: 260px; } }
 
@@ -3378,47 +3382,47 @@ body button:focus { outline: 1px solid #e6e6e6; }
 
 @media (max-width: 575.98px) { .shoppingCartContainer { margin-top: 35px; margin-bottom: 30px; padding: 0 15px; } }
 
+.shoppingCartContainer .total { margin: 0 20px 20px; color: #f16d7f; }
+
 .shoppingCartContainer .shoppingHeadProductWrap { grid-area: HeadProduct; }
 
-.shoppingCartContainer .shoppingHeadPriceWrap { grid-area: HeadPrice; }
+.shoppingCartContainer .shoppingDescProductWrap { grid-area: DescProduct; }
 
-.shoppingCartContainer .shoppingDescProductWrap1 { grid-area: DescProduct1; }
+.shoppingCartContainer .shoppingCartWrap { grid-row-gap: 1px; background-color: #eaeaea; display: grid; grid-template-columns: 2fr; grid-template-rows: 2fr; grid-template-areas: "HeadProduct" "DescProduct"; }
 
-.shoppingCartContainer .shoppingDescPriceWrap1 { grid-area: DescPrice1; }
-
-.shoppingCartContainer .shoppingDescProductWrap2 { grid-area: DescProduct2; }
-
-.shoppingCartContainer .shoppingDescPriceWrap2 { grid-area: DescPrice2; }
-
-.shoppingCartContainer .shoppingDescProductWrap3 { grid-area: DescProduct3; }
-
-.shoppingCartContainer .shoppingDescPriceWrap3 { grid-area: DescPrice3; }
-
-.shoppingCartContainer .shoppingCartWrap { grid-row-gap: 1px; background-color: #eaeaea; display: grid; grid-template-columns: 2fr 3fr; grid-template-rows: auto; grid-template-areas: "HeadProduct HeadPrice" "DescProduct1 DescPrice1" "DescProduct2 DescPrice2" "DescProduct3 DescPrice3"; }
-
-@media (max-width: 767.98px) { .shoppingCartContainer .shoppingCartWrap { grid-template-areas: "HeadProduct HeadProduct" "DescProduct1 DescProduct1" "HeadPrice HeadPrice" "DescPrice1 DescPrice1" "DescProduct2 DescProduct2" "DescPrice2 DescPrice2" "DescProduct3 DescProduct3" "DescPrice3 DescPrice3"; } }
+@media (max-width: 767.98px) { .shoppingCartContainer .shoppingCartWrap { grid-template-areas: "HeadProduct HeadProduct" "DescProduct DescProduct"; } }
 
 .shoppingCartContainer .shoppingCartWrap > div { background-color: #fff; padding: 25px 0; }
 
-.shoppingCartContainer .shoppingHeadProductWrap, .shoppingCartContainer .shoppingDescProductWrap1, .shoppingCartContainer .shoppingDescProductWrap2, .shoppingCartContainer .shoppingDescProductWrap3 { display: flex; justify-content: flex-start; align-items: center; }
+.shoppingCartContainer .shoppingHeadProductWrap, .shoppingCartContainer .shoppingDescProductWrap { display: flex; justify-content: space-between; align-items: center; }
 
-.shoppingCartContainer .shoppingHeadPriceWrap, .shoppingCartContainer .shoppingDescPriceWrap1, .shoppingCartContainer .shoppingDescPriceWrap2, .shoppingCartContainer .shoppingDescPriceWrap3 { display: flex; justify-content: space-around; align-items: center; color: #656565; font-size: 13px; font-weight: 400; line-height: 115px; }
+.shoppingCartContainer .shoppingHeadProductWrap img, .shoppingCartContainer .shoppingDescProductWrap img { width: 110px; }
 
-@media (max-width: 575.98px) { .shoppingCartContainer .shoppingHeadPriceWrap, .shoppingCartContainer .shoppingDescPriceWrap1, .shoppingCartContainer .shoppingDescPriceWrap2, .shoppingCartContainer .shoppingDescPriceWrap3 { line-height: inherit; } }
+.shoppingCartContainer .shoppingHeadProductWrap .shoppingCartHead, .shoppingCartContainer .shoppingDescProductWrap .shoppingCartHead { color: #222222; font-size: 13px; font-weight: 700; line-height: 20px; letter-spacing: -0.2px; flex-basis: 120px; text-align: center; }
 
-.shoppingCartContainer .shoppingHeadPriceWrap input, .shoppingCartContainer .shoppingDescPriceWrap1 input, .shoppingCartContainer .shoppingDescPriceWrap2 input, .shoppingCartContainer .shoppingDescPriceWrap3 input { width: 54px; height: 30px; border: 1px solid #eaeaea; background-color: #fff; text-align: center; }
+.shoppingCartContainer .shoppingHeadProductWrap .shoppingCartHead:nth-child(2), .shoppingCartContainer .shoppingDescProductWrap .shoppingCartHead:nth-child(2) { flex: 200px; }
 
-.shoppingCartContainer .shoppingHeadPriceWrap .productCartAction, .shoppingCartContainer .shoppingDescPriceWrap1 .productCartAction, .shoppingCartContainer .shoppingDescPriceWrap2 .productCartAction, .shoppingCartContainer .shoppingDescPriceWrap3 .productCartAction { color: #c0c0c0; font-size: 16px; }
+.shoppingCartContainer .shoppingHeadProductWrap .shoppingCartHead:last-child, .shoppingCartContainer .shoppingDescProductWrap .shoppingCartHead:last-child { flex: 80px; }
 
-.shoppingCartContainer .shoppingCartHead { color: #222222; font-size: 13px; font-weight: 700; line-height: 20px; letter-spacing: -0.2px; }
+@media (max-width: 575.98px) { .shoppingCartContainer .shoppingHeadProductWrap .shoppingCartHead, .shoppingCartContainer .shoppingDescProductWrap .shoppingCartHead { font-size: 10px; font-weight: 700; } }
 
-@media (max-width: 575.98px) { .shoppingCartContainer .shoppingCartHead { font-size: 10px; font-weight: 700; } }
+.shoppingCartContainer .shoppingHeadProductWrap .productCartPrice, .shoppingCartContainer .shoppingDescProductWrap .productCartPrice { color: #656565; font-size: 13px; font-weight: 400; line-height: 115px; flex-basis: 120px; text-align: center; }
+
+.shoppingCartContainer .shoppingHeadProductWrap .productCartPrice:nth-child(2), .shoppingCartContainer .shoppingDescProductWrap .productCartPrice:nth-child(2) { flex: 200px; }
+
+.shoppingCartContainer .shoppingHeadProductWrap .productCartPrice:last-child, .shoppingCartContainer .shoppingDescProductWrap .productCartPrice:last-child { flex: 80px; background-color: #fff; color: #c0c0c0; font-size: 16px; }
+
+.shoppingCartContainer .shoppingHeadProductWrap .productCartPrice:last-child:hover, .shoppingCartContainer .shoppingDescProductWrap .productCartPrice:last-child:hover { color: #8a8a8a; cursor: pointer; }
+
+.shoppingCartContainer .shoppingHeadProductWrap button, .shoppingCartContainer .shoppingDescProductWrap button { border-style: none; }
+
+.shoppingCartContainer .shoppingHeadProductWrap button:focus, .shoppingCartContainer .shoppingDescProductWrap button:focus { outline: none; }
 
 .shoppingCartContainer .productCart { height: 115px; margin-left: 21px; display: flex; flex-direction: column; align-items: flex-start; font-size: 13px; font-weight: 400; }
 
 .shoppingCartContainer .productCart .productCartName { color: #222222; text-transform: uppercase; line-height: 2.4em; }
 
-.shoppingCartContainer .productCart .productCartDetails { margin-top: 20px; color: #575757; line-height: 20px; }
+.shoppingCartContainer .productCart .productCartDetails { margin-top: 20px; color: #575757; line-height: 20px; text-align: start; }
 
 .shoppingCartContainer .productCart .productCartDetails span { color: #6f6e6e; font-weight: 300; }
 
