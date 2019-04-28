@@ -4,76 +4,98 @@
       "category": "featured",
       "name": "Mango  People  T-shirt",
       "image": "images/product_1.jpg",
+      "color": "Red",
+      "size": "XXL",
       "price": 52
     },
     {
       "id": "2",
       "category": "featured",
-      "name": "Mango  People  T-shirt",
+      "name": "Mango  People  Blouse",
       "image": "images/product_2.jpg",
+      "color": "Blue",
+      "size": "XL",
       "price": 52
     },
     {
       "id": "3",
       "category": "featured",
-      "name": "Mango  People  T-shirt",
+      "name": "Mango  People  Jacket",
       "image": "images/product_3.jpg",
+      "color": "Black",
+      "size": "L",
       "price": 52
     },
     {
       "id": "4",
       "category": "featured",
-      "name": "Mango  People  T-shirt",
+      "name": "Mango  People  Top",
       "image": "images/product_4.jpg",
+      "color": "White",
+      "size": "M",
       "price": 52
     },
     {
       "id": "5",
       "category": "featured",
-      "name": "Mango  People  T-shirt",
+      "name": "Mango  People  Shirt",
       "image": "images/product_5.jpg",
+      "color": "Black",
+      "size": "S",
       "price": 52
     },
     {
       "id": "6",
       "category": "featured",
-      "name": "Mango  People  T-shirt",
+      "name": "Mango  People  Suit jacket",
       "image": "images/product_6.jpg",
+      "color": "Blue",
+      "size": "XS",
       "price": 52
     },
     {
       "id": "7",
       "category": "featured",
-      "name": "Mango  People  T-shirt",
+      "name": "Mango  People  Trousers",
       "image": "images/product_7.jpg",
+      "color": "Red",
+      "size": "XXL",
       "price": 52
     },
     {
       "id": "8",
       "category": "featured",
-      "name": "Mango  People  T-shirt",
+      "name": "Mango  People  Shorts",
       "image": "images/product_8.jpg",
+      "color": "Red",
+      "size": "XXL",
       "price": 52
     },
     {
       "id": "9",
       "category": "men",
-      "name": "Mango  People  T-shirt",
+      "name": "Mango  People  Coat",
       "image": "images/product1.jpg",
+      "color": "Red",
+      "size": "XXL",
       "price": 52
     },
     {
       "id": "10",
       "category": "men",
-      "name": "Mango  People  T-shirt",
+      "name": "Mango  People  Coat",
       "image": "images/product2.jpg",
+      "color": "Red",
+      "size": "XXL",
       "price": 52
     },
     {
       "id": "11",
       "category": "men",
-      "name": "Mango  People  T-shirt",
+      "name": "Mango  People  Jacket",
       "image": "images/product3.jpg",
+      "color": "Red",
+      "size": "XXL",
       "price": 52
     },
     {
@@ -81,34 +103,44 @@
       "category": "men",
       "name": "Mango  People  T-shirt",
       "image": "images/product4.jpg",
+      "color": "Red",
+      "size": "XXL",
       "price": 52
     },
     {
       "id": "13",
       "category": "men",
-      "name": "Mango  People  T-shirt",
+      "name": "Mango  People  Shorts",
       "image": "images/product5.jpg",
+      "color": "Red",
+      "size": "XXL",
       "price": 52
     },
     {
       "id": "14",
       "category": "men",
-      "name": "Mango  People  T-shirt",
+      "name": "Mango  People  Jacket",
       "image": "images/product6.jpg",
+      "color": "Red",
+      "size": "XXL",
       "price": 52
     },
     {
       "id": "15",
       "category": "men",
-      "name": "Mango  People  T-shirt",
+      "name": "Mango  People  Suit jacket",
       "image": "images/product7.jpg",
+      "color": "Red",
+      "size": "XXL",
       "price": 52
     },
     {
       "id": "16",
       "category": "men",
-      "name": "Mango  People  T-shirt",
+      "name": "Mango  People  Coat",
       "image": "images/product8.jpg",
+      "color": "Red",
+      "size": "XXL",
       "price": 52
     },
     {
@@ -116,6 +148,8 @@
       "category": "men",
       "name": "Mango  People  T-shirt",
       "image": "images/product9.jpg",
+      "color": "Red",
+      "size": "XXL",
       "price": 52
     }
   ]
